@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<title>success</title>
+{% endblock %}
+
+{%block body%}
+ <div >
+    <form action="/ok" method="POST" >
+    <button  id= "done" type="submit" >Registered successfully</button>
+    </form>
+</div>
+<div>
+    <img src="{{ url_for('static', filename='qrimg.png') }}" />
+</div>
+{%endblock%}    

@@ -1,0 +1,26 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<title>Registration</title>
+{% endblock %}
+
+{%block body%}
+<div class="container">
+   <h1 align = "center">Registration Form</h1>
+   <form action="/reg" method="POST">
+    <label><b>Name</b></label>
+    <input type="text" name="name" placeholder="Enter Name" required >
+    <label><b>College Name</b></label>
+    <input type="text" name="college" placeholder="Enter College name" required >
+    <label><b>Department</b></label>
+    <input type="text" name="dept" placeholder="Enter Department" required >
+    <label><b>Year</b></label>
+    <input type="number" name="year" placeholder="Enter Year" required >
+    <label><b>Phone no.</b></label>
+    <input type="number" name="no" placeholder="Enter Phone no" required >
+    <label><b>Email</b></label>
+    <input type="email" name="email" placeholder="Enter Email" required >
+   <button type="submit" >Join</button>
+   </form>
+  </div>
+{%endblock%}
